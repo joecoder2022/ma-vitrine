@@ -1,0 +1,110 @@
+{% extends "facebook/home.html" %}
+
+{% block content %}
+
+<!-- la section about de ma page -->
+
+<div class="container">
+    <div class="card bg-dark text-white">
+        <img src="https://www.centre-europeen-formation.fr/wp-content/uploads/2023/03/slider-developpeur-web.jpeg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title text-dark">SWEDISOFT.</h5>
+          <p class="card-text">I like to create solid and scalable web products with an excellent user experience.</p>
+          <p class="card-text">Last updated 3 mins ago</p>
+        </div>
+      </div>
+</div>
+
+<div class="container mt-5">
+        <h3 class="text-center">About</h3>
+    
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div>
+            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <br> delectus iusto molestias assumenda veniam modi
+                 repudiandae tempore, reprehenderit totam velit !
+           </p>
+        </div>
+    </div>
+</div>
+    <!--la section contact de ma page -->
+<div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://media.istockphoto.com/id/1303835913/fr/photo/homme-afro-am%C3%A9ricain-de-sourire-dans-le-centre-de-donn%C3%A9es.jpg?s=612x612&w=0&k=20&c=hE7tXV0AxL3HZh6D5mTtvEvqs2LJujwFCVpI4ckZ8P4=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jonathan</h5>
+              <p class="card-text">
+                I am a computer network specialist.
+                 My job is to manage, maintain and improve
+                  business computer networks to be efficient
+                   and reliable. 
+                </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://api.lestricolores.fr/uploads/images/products/personne-physique-ou-morale-ce-quil-vous-faut-savoir-13012022020600081226.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Swedi</h5>
+              <p class="card-text">
+                I am a specialist in web development with Django. 
+                My job is to create efficient, responsive and secure web sites
+                 and applications using the Django framework. 
+                 
+                </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://media.istockphoto.com/id/1336658193/fr/photo/jeune-homme-confiant-travaillant-sur-ordinateur.jpg?s=170667a&w=0&k=20&c=Fen5KarGN9YfYge_2Ckfnpf3ByVr_WO-0Ih8CGTPm5k=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Emmanuel</h5>
+              <p class="card-text">
+                I am a Linux specialist. My job is to manage, maintain and improve Linux systems
+                 so that they are efficient and reliable. 
+                 I am proficient in configuring, installing and maintaining Linux servers
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+</div> 
+<div class="text-center mt-5">
+    <h3 class="text-green">Send me a message !</h3>
+    <div class="container">
+        <p class="text-wrap">
+            Got a question or proposal, or just want to say hello? Go ahead
+        </p>
+    </div>
+</div>
+       
+<div class="row">
+    <div class="row-cols-4">
+        <form class="offset-md-1" method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" class="btn btn-success" value="Send">
+        </form>
+    </div>
+</div>
+      
+</div>
+
+</div>
+
+{% endblock content %}
